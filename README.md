@@ -1,2 +1,2 @@
 # googlehomepage2
-second trail homepage
+second trial homepage
