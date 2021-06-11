@@ -18,9 +18,15 @@
     clip: rect(0px, 20px, 20px, 0px); 
     }
     form:hover {box-shadow: 0 1px 2px 0
-    rgba(60, 64, 67, 0.3);}
+    rgba(60, 64, 67, 0.3);}  
+    input:focus {
+        outline:none !important;
+    }
+
     input {margin-left:45px ; margin-top: 
-    6px; width: 487px; }
+    6px; width: 487px; }  
+
+
 
     .topbox { background-color: 
     white; width: 1280px; height: 48px; 
@@ -52,48 +58,95 @@
     box-sizing: border-box;border: 1px solid transparent;
     margin-left: 20px;}
 
+    a.sign-in:hover {box-shadow: 1px 1px 1px 1px;
+    color:rgb(240, 240, 240);
+   
+ }
+
+    .buttons {
+        background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin-top: 25px;
+    position: relative; 
+    line-height: 27px;
+    height: 36px;
+    width: 127px;
+    text-align: center !important;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;}
+    
+    .buttons:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;}
+    
+    .flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+dl dt:hover {text-decoration:underline;}
 
     
+img.circle:hover {
+    background-color: rgb(240, 240, 240);
+    content: 40px; 
+    padding: 10px;
+    background-border-radius: 50%;
+    margin-left: -10px;
+    margin-right: -10px;
+  
+    background-size: auto 40px;
+    border-radius: 50%;
+}
+#white-box {background-color: white; height: 192px;}
+#box-container {background-color:rgb(240,240,240);
+    height: 50px; display: flex; 
+    white-space: nowrap; text-decoration: none; 
+    color:#70757a; font-size: 14px;
+font-family: arial,sans-serif; position: relative;} 
+#box1 { width: 100px; margin: 15px 5px 30px 25px;}
+#box2 { width: 100px; margin: 15px 5px 30px 24px; }
+#box3 { width: 160px; margin: 15px 5px 30px 27px;}
+#box4 { width: 14px; margin: 13px 5px 30px 240px;}
+#box5 { width: 700px; margin: 13px -20px 30px 13px;}
+#box6 { width: 80px; margin: 15px 20px 30px 110px;}
+#box7 { width: 80px; margin: 15px 5px 30px 10px;}
+#box8 { width: 110px; margin: 15px 5px 30px 12px;}
+
 
    
-
-
-    
-    
-   
-   
-
-
-
-    
-
-   
-    
-    
 
 </style>
 
-<div class="topbox" 
-<header>
-    <dl class="topbox" display="inline" 
-    <dt><a style="margin-left: 17px;" href="https://about.google/
-        ?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">
-        About</a></dt>
+
+
+    <dl class="topbox" display="inline">
+    <dt><a style="margin-left: 17px; cursor: pointer;" ref="#">
+        About</a #70757a;></dt>
     <dt><a style="margin-left: 20px;" href="#">Store</a></dt>
     
-    <dt><a style="margin-left: 961px; margin-right: 15px; font-family: arial, sans-serif; font-size: 13px;"href="https://mail.google.com/mail/&amp;ogbl" 
+    <dt><a style="margin-left: 961px; margin-right: 15px; font-family: arial, sans-serif; font-size: 13px;"href="#" 
         target="_top" >Gmail</a></dt>
     <dt><a style="margin-right: 18px; font-family: arial, sans-serif; font-size: 13px;" href="https://www.google.com/imghp?hl=en&amp;ogbl" 
         target="_top">Images</a></dt>
-    <dt><a style="padding: 9px 9px 9px 9px;color: #5f6368; opacity: 1;
-        opacity: 0.6; fill: currentColor; " href= "https://www.google.com/intl/en/about/products">
+    <dt><a style="color: #5f6368; opacity: 1;
+        opacity: 0.6; fill: currentColor;" href= "#">
         <img src="https://icon-library.net//images/dots-icon/dots-icon-20.jpg" 
-        width="22"></a></dt>
+        width="22" class="circle"></img></a></dt>
     <dt><a class="sign-in" href="#">Sign in</a></dt></header>
 
 
 </dl>  
-</header></div>
+
     <body>
     
     <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
@@ -108,13 +161,37 @@
 
     
 
-    <form > <p>
+    <form><p>
         <img src="https://www.google.com/images/searchbox/desktop_searchbox_sprites318_hr.webp" alt="#" width="20px" 
         height="60px"></img></p>
 
         
-    <input type="text"> 
-</form></body>
+    <input type="text" focus="outline:none" style="border: none; margin-top: 10px;"
+    ></form>
+    <div class="flex-parent jc-center">
+    <button type="submit" class="buttons">Google Search</button>
+
+    <button style="margin-left: 20px" type="submit"  class="buttons">I'm Feeling Lucky</button>
+    </div>
+    <div id="white-box"></div>
+</body>
+<footer>
+    <div id="box-container">
+    <div id="box1">Advertising</div>
+    <div id="box2">Business</div>
+    <div id="box3">How Search Works</div>
+    <div id="box4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" 
+        class="leaf" alt="" style="height: 14px; width: 14px; padding: 6px;"></div>
+    <div id="box5">Carbon neutral since 2007</div>
+    <div id="box6">Privacy</div>
+    <div id="box7">Terms</div>
+    <div id="box8">Settings</div>
+</footer>
+
+
+  
+   
+
 
 
     </html>
