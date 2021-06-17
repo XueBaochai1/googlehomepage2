@@ -35,6 +35,7 @@
     display: flex; align-items: center;
     margin-top: 7px;
     margin-bottom: 2px;
+    text-decoration: none;
    
     }
     .logo { display:block; position: relative;
@@ -108,19 +109,21 @@ img.circle:hover {
     border-radius: 50%;
 }
 #white-box {background-color: white; height: 192px;}
-#box-container {background-color:rgb(240,240,240);
+.box-container {background-color:rgb(240,240,240);
     height: 50px; display: flex; 
-    white-space: nowrap; text-decoration: none; 
-    color:#70757a; font-size: 14px;
-font-family: arial,sans-serif; position: relative;} 
-#box1 { width: 100px; margin: 15px 5px 30px 25px;}
-#box2 { width: 100px; margin: 15px 5px 30px 24px; }
-#box3 { width: 160px; margin: 15px 5px 30px 27px;}
-#box4 { width: 14px; margin: 13px 5px 30px 240px;}
-#box5 { width: 700px; margin: 13px -20px 30px 13px;}
-#box6 { width: 80px; margin: 15px 20px 30px 110px;}
-#box7 { width: 80px; margin: 15px 5px 30px 10px;}
-#box8 { width: 110px; margin: 15px 5px 30px 12px;}
+    white-space: nowrap; text-decoration: none;
+    font-size: 14px; 
+    font-family: arial,sans-serif; position: relative;} 
+#box1 { width: 100px; margin: 15px 5px 30px 25px;color: #70757a;}
+#box2 { width: 100px; margin: 15px 5px 30px 24px;color: #70757a; }
+#box3 { width: 160px; margin: 15px 240px 30px 27px;color: #70757a; }
+#box4 { width: 14px; margin: 30px 2px 0px 449px;}
+#box5 { width: 700px; margin: 13px 20px 30px 0px;color: #70757a;}
+#box6 { width: 80px; margin: 15px 20px 30px 110px;color: #70757a;}
+#box7 { width: 80px; margin: 15px 5px 30px 10px;color: #70757a;}
+#box8 { width: 110px; margin: 15px 5px 30px 12px;color: #70757a;}
+
+.box-container a:hover {text-decoration: underline; color: #70757a; }
 
 
    
@@ -130,13 +133,13 @@ font-family: arial,sans-serif; position: relative;}
 
 
     <dl class="topbox" display="inline">
-    <dt><a style="margin-left: 17px; cursor: pointer;" ref="#">
+    <dt><a style="margin-left: 17px; cursor: pointer;" href="#">
         About</a #70757a;></dt>
     <dt><a style="margin-left: 20px;" href="#">Store</a></dt>
     
     <dt><a style="margin-left: 961px; margin-right: 15px; font-family: arial, sans-serif; font-size: 13px;"href="#" 
         target="_top" >Gmail</a></dt>
-    <dt><a style="margin-right: 18px; font-family: arial, sans-serif; font-size: 13px;" href="https://www.google.com/imghp?hl=en&amp;ogbl" 
+    <dt><a style="margin-right: 18px; font-family: arial, sans-serif; font-size: 13px;" href="#" 
         target="_top">Images</a></dt>
     <dt><a style="color: #5f6368; opacity: 1;
         opacity: 0.6; fill: currentColor;" href= "#">
@@ -176,17 +179,18 @@ font-family: arial,sans-serif; position: relative;}
     <div id="white-box"></div>
 </body>
 <footer>
-    <div id="box-container">
-    <div id="box1">Advertising</div>
-    <div id="box2">Business</div>
-    <div id="box3">How Search Works</div>
-    <div id="box4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" 
-        class="leaf" alt="" style="height: 14px; width: 14px; padding: 6px;"></div>
-    <div id="box5">Carbon neutral since 2007</div>
-    <div id="box6">Privacy</div>
-    <div id="box7">Terms</div>
-    <div id="box8">Settings</div>
+    <div class="box-container" display="inline">
+    <a id="box1" href="#">Advertising</a>
+    <a id="box2" href="#">Business</a>
+    <a id="box3" href="#">How Search Works</a>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" 
+        class="leaf" alt="" style="height: 14px; width: 14px;padding: 14px 6px">
+    <a id="box5" href="#">Carbon neutral since 2007</a>
+    <a id="box6" href="#">Privacy</a>
+    <a id="box7" href="#">Terms</a>
+    <a id="box8" href="#">Settings</a></div>
 </footer>
+
 
 
   
